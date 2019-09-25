@@ -14,7 +14,7 @@ export default class Home extends Component {
         let artist = this.state.artist
         let title = this.state.title
         const response = await axios.get(`http://localhost:6008/${artist}/${title}`)
-        if(response.data.lyrics){
+        if(response.data.lyrics) {
             this.setState({ lyrics: response.data.lyrics })
         }
         else{
