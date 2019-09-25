@@ -7,7 +7,7 @@ export default class Home extends Component {
 
     constructor() {
         super()
-        this.state = { artist: "", title: "", lyrics:  [] }
+        this.state = { artist: "", title: "", lyrics:[] }
     }
 
     getLyrics = async () => {
