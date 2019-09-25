@@ -43,9 +43,10 @@ export default class Home extends Component {
             <div>
                 <input value={this.state.artist} onChange={(e) => this.setState({ artist: e.target.value })} placeholder="Artist"></input>
                 <input value={this.state.title} onChange={(e) => this.setState({ title: e.target.value })} placeholder="Title"></input>
-                <button className="search" onClick={this.getLyrics}>Search</button> <hr></hr>
+                <button className="search" onClick={this.getLyrics}>Search</button>  <hr></hr>
+                <span id="credits">Created By <a href="https://github.com/yonikt">Yoni Kiat</a></span> <br></br>
                 <p>{this.state.lyrics}</p>
-                {this.state.lyrics.length === 0 ? null : <button className="save" onClick={this.saveLyrics}>Save</button>}
+                {this.state.lyrics.length === 0 ? null : <button className="save" onClick={this.saveLyrics}>Save ❤️</button>}
             </div>
         )
     }

@@ -28,7 +28,7 @@ export default class SavedLyrics extends Component {
         return (
             <div>
              {this.state.SavedLyrics.map(i=> <div> <h3>{i.artist.charAt(0).toUpperCase()+ i.artist.slice(1)} - {i.title.charAt(0).toUpperCase()+ i.title.slice(1)}</h3> <p>{i.lyrics}</p> 
-                <button className="delete" onClick={()=>this.removeLyrics(i.title)}>Delete</button>
+                <button className="delete" onClick={()=>this.removeLyrics(i.title)}>Delete 🗑️</button>
               <hr></hr> </div>)}
             </div>
         )
